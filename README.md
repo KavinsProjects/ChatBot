@@ -18,29 +18,8 @@ Python – Core scripting and backend logic
 
 📂 Project Structure
 
-CHATBOT/
-├── chat/                         # Main Django app
-│   ├── migrations/
-│   ├── templates/chat/
-│   │   └── index.html            # Chat UI
-│   ├── __init__.py
-│   ├── admin.py
-│   ├── apps.py
-│   ├── models.py
-│   ├── tests.py
-│   ├── urls.py
-│   └── views.py                  # Handles chat logic
-│
-├── chatbot_project/              # Django project settings
-│   ├── __init__.py
-│   ├── asgi.py
-│   ├── settings.py               # Project configuration
-│   ├── urls.py
-│   └── wsgi.py
-│
-├── myvenv/                       # Virtual environment
-├── db.sqlite3                    # SQLite database
-└── manage.py                     # Django CLI utility
+
+
 
 thanks
 
