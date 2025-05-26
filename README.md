@@ -20,7 +20,7 @@ Python – Core scripting and backend logic
 🌟 What's Special
 ⚝ Runs Locally: No API keys, no internet required — everything works right on your machine.
 ⚝ All conversations stay with you.
-⚝ Built with Django
+⚝ Built with Django.
 
 
 📂 Project Structure
