@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ollama Chat UI 💬</title>
+  <style>
+    body {
+      background-color: #000;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      color: #fff;
+    }
+
+    .headline {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    .chat-container {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(16px) saturate(180%);
+      -webkit-backdrop-filter: blur(16px) saturate(180%);
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      width: 90%;
+      max-width: 500px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 26px;
+      color: #fff;
+      font-weight: 600;
+    }
+
+    form {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    input[type="text"] {
+      flex: 1;
+      padding: 12px;
+      border-radius: 12px;
+      border: 1px solid #555;
+      font-size: 16px;
+      background: #222;
+      color: #fff;
+    }
+
+    input[type="file"] {
+      display: none;
+    }
+
+    .upload-label {
+      background-color: #444;
+      color: white;
+      border-radius: 12px;
+      padding: 10px 14px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .upload-label:hover {
+      background-color: #666;
+    }
+
+    button {
+      background-color: #1f1f1f;
+      padding: 12px;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #333;
+    }
+
+    button svg {
+      width: 20px;
+      height: 20px;
+      fill: white;
+    }
+
+    .message {
+      margin-top: 25px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .user-msg, .bot-msg {
+      padding: 12px 18px;
+      border-radius: 15px;
+      max-width: 85%;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    .user-msg {
+      background-color: #007aff;
+      align-self: flex-end;
+      text-align: right;
+      color: #fff;
+    }
+
+    .bot-msg {
+      background-color: #1a1a1a;
+      border-left: 5px solid #007aff;
+      color: #e0e0e0;
+    }
+
+    .emoji {
+      font-size: 20px;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+  <div class="headline">What I Can Help Today</div>
+
+  <div class="chat-container">
+    <h2>💬 Your Assistant</h2>
+    <form method="post" enctype="multipart/form-data">
+      {% csrf_token %}
+      <input type="text" id="chat-input" name="message" placeholder="say poem" required>
+      <label for="file-upload" class="upload-label" title="Add file">
+        ➕
+      </label>
+      <input type="file" id="file-upload" name="uploaded_file">
+      <button type="submit" aria-label="Send message">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M2 21l21-9L2 3v7l15 2-15 2z"/>
+        </svg>
+      </button>
+    </form>
+
+    <div class="message">
+      {% if user_message %}
+        <div class="user-msg"><strong>You:</strong> {{ user_message }}</div>
+      {% endif %}
+      {% if bot_reply %}
+        <div class="bot-msg"><br><strong>Response:<br></strong></strong> {{ bot_reply }}</div>
+      {% endif %}
+    </div>
+  </div>
+</body>
+</html>
+
+<script>
+  const placeholders = [
+    "Say poem 📜",
+    "Ask a fact 🔍",
+    "Tell a joke 😂",
+    "Ask for advice 💡",
+    "Get a quote 🧠",
+    "Share a thought 🤔"
+  ];
+
+  const input = document.getElementById("chat-input");
+  let index = 0;
+
+  setInterval(() => {
+    index = (index + 1) % placeholders.length;
+    input.setAttribute("placeholder", placeholders[index]);
+  }, 4500);
+</script>
