@@ -1,6 +1,7 @@
 🤖 Ollama Chatbot with
 Django Web Application
-chatbot, built using Ollama for language modeling and Django for a seamless web experience. AI chatbot built using the power of Ollama's local large language models and the robustness of the Django web framework.
+chatbot, built using Ollama for language modeling and Django for a seamless web experience. AI chatbot built using the power of
+ Ollama's local large language models and the robustness of the Django web framework.
 
 </> Tech Stack
 Ollama – Local LLM runtime engine
