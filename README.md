@@ -25,8 +25,8 @@ Python – Core scripting and backend logic
 
 📂 Project Structure
 
+![Screenshot 2025-05-26 230604](https://github.com/user-attachments/assets/03c4599e-afcb-4512-b742-e2b573aa0450)
 
-![Alt text](C:\Users\Kavin Kanagaraj\OneDrive\Pictures\Screenshots\Screenshot 2025-05-26 230604.png)
 
 
 thanks
