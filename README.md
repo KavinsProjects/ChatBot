@@ -42,7 +42,7 @@ CHATBOT/
 ├── db.sqlite3                    # SQLite database
 └── manage.py                     # Django CLI utility
 
-
+thanks
 
 
 Prerequisites
