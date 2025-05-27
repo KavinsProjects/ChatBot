@@ -56,12 +56,20 @@ CHATBOT/
 
 ---
 
-## ⚙️ Prerequisites
+⚙️ Prerequisites
 
-Before you begin, ensure the following are installed:
+### 🪟 For Windows:
 
-- ✅ Python 3.10+
-- ✅ Django 4.x (recommended)
-- ✅ Ollama (installed and running locally)
+1. **Install Python 3.10+**  
+   [Download Python for Windows](https://www.python.org/downloads/windows/)
 
----
+2. **Install Ollama (Windows)**  
+   Download from the official site: [https://ollama.com](https://ollama.com)
+
+   After installation:
+   - Open **Ollama app** 
+   - Open terminal (PowerShell/CMD) and run:
+     ```bash
+     ollama run llama3
+     ```
+
