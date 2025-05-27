@@ -69,7 +69,9 @@ CHATBOT/
    After installation:
    - Open **Ollama app** 
    - Open terminal (PowerShell/CMD) and run:
-     ```bash
-     ollama run llama3
-     ```
+   - type ollama
+        
+
+![WhatsApp Image 2025-05-27 at 12 59 05_a9d161c4](https://github.com/user-attachments/assets/b5e9dd4f-43a3-41ac-8316-1ffe86ee6161)
+
 
