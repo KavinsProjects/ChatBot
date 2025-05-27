@@ -11,9 +11,14 @@ Ollama's local large language models and the robustness of the Django web framew
 
 </> Tech Stack
 Ollama – Local LLM runtime engine
+
 Django – Backend and web framework
+
 HTML/CSS/JS – Frontend technologies
+
 Python – Core scripting and backend logic
+
+
 
 
 🌟 What's Special
