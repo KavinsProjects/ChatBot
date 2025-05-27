@@ -82,35 +82,6 @@ Open the project folder in VS Code
 
 Create and activate a virtual environment
 
-bash
-Copy
-Edit
 python -m venv myvenv
 myvenv\Scripts\activate
-Install Django
-
-bash
-Copy
-Edit
-pip install django
-Run migrations
-
-bash
-Copy
-Edit
-python manage.py migrate
-Start the development server
-
-bash
-Copy
-Edit
-python manage.py runserver
-Start LLaMA 3.0 in a separate terminal
-
-bash
-Copy
-Edit
-ollama run llama3
-Open your browser and go to:
-👉 http://127.0.0.1:8000
 
