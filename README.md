@@ -120,15 +120,7 @@ ollama run llama3
 
 ---
 
-## 💡 Tips & Improvements
 
-- 💾 Save chat history using Django models  
-- 🔐 Add authentication (login/signup)  
-- 🎨 Style with Bootstrap or Tailwind CSS  
-- 🎙️ Add voice input and output features  
-- 🐳 Add Docker support for isolated deployments
-
----
 
 ## 📜 License
 
@@ -136,7 +128,6 @@ This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-## 🙌 Author
+##
 
-Made with ❤️ by **Captain**  
 Powered by [LLaMA 3.0](https://ollama.com/library/llama3) via [Ollama](https://ollama.com)
