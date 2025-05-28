@@ -14,7 +14,8 @@ This project combines:
 - 🐍 **Python** – The programming core of both backend and integration
 
 ---
-![Uploading Screenshot 2025-05-28 120053.png…]()
+![Screenshot 2025-05-28 120053](https://github.com/user-attachments/assets/b456a451-cfa8-475c-bbb5-17aec819b8af)
+
 
 
 ## 🌟 Key Features
