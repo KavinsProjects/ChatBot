@@ -1,6 +1,6 @@
 # 🤖 Ollama Chatbot – Django Web Application
 
-Welcome to the **Ollama Chatbot**, a private AI-powered chatbot built using **LLaMA 3.0** and Django. It runs fully offline using Ollama’s local LLM engine, making it fast, secure, and ideal for personal or experimental use.
+Welcome to the **Ollama Chatbot**, a private AI-powered chatbot built using **LLaMA 3.0** and Django. It runs no online using Ollama’s local LLM engine, making it fast, secure, and ideal for personal or experimental use.
 
 ---
 
